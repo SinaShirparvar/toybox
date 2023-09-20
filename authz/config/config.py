@@ -14,6 +14,8 @@ class Config:
 
     JSONIFY_PRETTYPRINT_REGULAR = True
 
+    TIMEZONE = environ.get("TOYBOX_AUTHZ_TIMEZONE", "Asia/Tehran")
+
     ######################## Database Configuration ########################
 
     SQLALCHEMY_DATABASE_URI = environ.get("TOYBOX_AUTHZ_DATABASE_URI", None)
