@@ -1,1 +1,1 @@
-from authz.schema import apiv1
+from authz.schema.apiv1.user import UserSchema
