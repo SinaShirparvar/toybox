@@ -7,12 +7,12 @@ class UserResource(Resource):
     def get(self, user_id=None):
         """
         GET /users --> Get list of users.
-        Get /users/<user_id> --> Get user info.
+        GET /users/<user_id> --> Get user info.
         """
         if user_id is None:
             return UserController.get_user_list()  # Get list of users
         else:
-            return UserController.get_user()  # Get user info
+            return UserController.get_user(user_id)  # Get user info
 
     def post(self):
         """
