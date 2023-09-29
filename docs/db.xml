@@ -37,7 +37,7 @@
     <type label="SET" length="1" sql="SET" quote=""/>
     <type label="Bit" length="0" sql="bit" quote=""/>
   </group>
-</datatypes><table x="98" y="184" name="user">
+</datatypes><table x="166" y="49" name="user">
 <row name="id" null="0" autoincrement="0">
 <datatype>VARCHAR(64)</datatype>
 </row>
@@ -58,13 +58,16 @@
 </row>
 <row name="last_login_at" null="1" autoincrement="0">
 <datatype>DATETIME</datatype>
-</row>
+<default>NULL</default></row>
 <row name="last_active_at" null="1" autoincrement="0">
 <datatype>DATETIME</datatype>
-</row>
+<default>NULL</default></row>
+<row name="last_change_at" null="1" autoincrement="0">
+<datatype>DATETIME</datatype>
+<default>NULL</default></row>
 <row name="failed_auth_at" null="1" autoincrement="0">
 <datatype>DATETIME</datatype>
-</row>
+<default>NULL</default></row>
 <row name="failed_auth_count" null="0" autoincrement="0">
 <datatype>INTEGER</datatype>
 <default>0</default></row>
